@@ -7,6 +7,7 @@ import { Footer } from "../../components/Footer";
 import { ContactForm } from "../../components/ContactForm";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
+import { RedirectTop } from "../../components/RedirectTop";
 
 interface TestimonialProps {
     author: string
@@ -151,6 +152,7 @@ export function HomePage() {
                     </section>
                 </section>
                 <Footer />
+                <RedirectTop />
             </main>
         </>
     )

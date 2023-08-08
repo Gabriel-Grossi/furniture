@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { navigationLinks } from "./Header"
-import { Sofa } from "lucide-react"
+import { Armchair } from "lucide-react"
 
 export function Footer() {
     return (
@@ -10,7 +10,7 @@ export function Footer() {
                     <div>
                         <div className="flex items-center">
                             <Link to={'/'} className="flex gap-4 items-center font-title text-2xl text-yellow-700">
-                                <Sofa />Furniture
+                                <Armchair />Furniture
                             </Link>
                         </div>
                         <nav className="flex gap-8 mt-11 max-sm:grid">
@@ -28,7 +28,7 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col pb-12 border-t border-gray-200 md:justify-between md:pt-6">
                     <p className="mt-6 text-sm text-gray-500 md:mt-0">
-                        © Copyright 2022. All rights reserved.
+                        2023 | Created by Gabriel Grossi.
                     </p>
                 </div>
             </div>

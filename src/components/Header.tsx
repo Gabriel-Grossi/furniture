@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Menu, Sofa, X } from "lucide-react";
+import { Armchair, Menu, X } from "lucide-react";
 import { useState } from 'react';
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -25,7 +25,7 @@ export function Header() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <Link to="#" className="-m-1.5 p-1.5 text-3xl flex items-center gap-x-4">
-                        <Sofa size={32} /> Furniture
+                        <Armchair size={32} /> Furniture
                     </Link>
                 </div>
                 <div className="flex lg:hidden">
