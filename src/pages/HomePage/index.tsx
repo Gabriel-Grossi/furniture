@@ -14,6 +14,10 @@ interface TestimonialProps {
     text: string
     customerSince: number
 }
+interface HighlightProps {
+    title: string
+    mainInfo: string
+}
 
 const testimonials = [
     {
@@ -31,6 +35,20 @@ const testimonials = [
         text: `Great value for money! It was definitely awesome, you guys nailed it. Top-notch quality and I recommend for anyone that are interested`,
         customerSince: 2019
     }
+]
+const highlights = [
+    {
+        title: "Best furniture's company on US West Coast",
+        mainInfo: `16x winner of the US West Coast's Furniture Company of the Year`
+    },
+    {
+        title: '40+ years',
+        mainInfo: "Since 1982, Furniture is a company created to help you design your house as you like including a sofiscated perspective from our professionals"
+    },
+    {
+        title: 'Built for everyone',
+        mainInfo: "We help your house or business to turn into a more elegant and sofisticated place"
+    },
 ]
 
 const images = [
@@ -120,6 +138,43 @@ export function HomePage() {
                                                                 </div>
                                                                 <div className="overflow-hidden rounded-full bg-gray-50">
                                                                 </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+                <section className="pt-20 mx-auto grid max-w-7xl p-6 lg:px-8">
+                    <SectionTitle title="About us" />
+                    <section className="py-10 sm:py-20">
+                        {/*<p></p>*/}
+                        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 max-lg:py-8">
+                            <ul role="list" className="grid max-w-2xl grid-cols-1 gap-6 mx-auto sm:gap-8 lg:max-w-none lg:grid-cols-3 max-lg:py-8">
+                                {
+                                    highlights.map((highlight: HighlightProps) => {
+                                        return (
+                                            <li>
+                                                <ul role="list" className="flex flex-col item gap-y-6 sm:gap-y-8">
+                                                    <li>
+                                                        <figure className="relative h-full p-6 bg-white rounded-3xl border border-yellow-700/10">
+                                                            <blockquote className="relative">
+                                                                <h3 className="text-xl font-semibold">
+                                                                    {highlight.title}
+                                                                </h3>
+                                                            </blockquote>
+                                                            <figcaption className="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100">
+
+                                                                <span className="mt-1 text-sm text-yellow-700/75">
+                                                                    {highlight.mainInfo}
+                                                                </span>
+
+
                                                             </figcaption>
                                                         </figure>
                                                     </li>
