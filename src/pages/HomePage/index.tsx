@@ -91,7 +91,7 @@ export function HomePage() {
                         <Link to={'/'} className="bg-yellow-700 flex w-max gap-12 py-1.5 px-3 text-white rounded">See More <MoveRight /></Link>
                     </div>
                 </section>
-                <section className="py-24 mx-auto grid max-w-7xl p-6 lg:px-8 max-md:pb-12">
+                <section className="py-24 mx-auto grid max-w-7xl p-6 lg:px-8 max-md:pb-12" id="projects">
                     <SectionTitle title="A room designed especially for you" />
                     <section className="pt-20 flex items-center max-md:grid">
                         <div className="w-1/2 pr-48 text-justify grid gap-10 max-md:w-full max-md:px-4 max-md:pb-12">
@@ -150,10 +150,9 @@ export function HomePage() {
                         </div>
                     </section>
                 </section>
-                <section className="pt-20 mx-auto grid max-w-7xl p-6 lg:px-8">
+                <section className="pt-20 mx-auto grid max-w-7xl p-6 lg:px-8" id="about-us">
                     <SectionTitle title="About us" />
                     <section className="py-10 sm:py-20">
-                        {/*<p></p>*/}
                         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 max-lg:py-8">
                             <ul role="list" className="grid max-w-2xl grid-cols-1 gap-6 mx-auto sm:gap-8 lg:max-w-none lg:grid-cols-3 max-lg:py-8">
                                 {
@@ -187,7 +186,7 @@ export function HomePage() {
                         </div>
                     </section>
                 </section>
-                <section className="pt-20 mx-auto grid max-w-7xl p-6 lg:px-8">
+                <section className="pt-20 mx-auto grid max-w-7xl p-6 lg:px-8" id="contact">
                     <SectionTitle title="Get in contact" />
                     <section className="py-20 sm:py-32">
                         <div className="flex items-center gap-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 max-md:grid">

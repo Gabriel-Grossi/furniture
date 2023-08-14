@@ -5,16 +5,20 @@ import { useState } from 'react';
 // eslint-disable-next-line react-refresh/only-export-components
 export const navigationLinks = [
     {
-        title: "Home"
+        title: "Home",
+        address: '/'
     },
     {
-        title: "Projects"
+        title: "Projects",
+        address: '/#projects'
     },
     {
-        title: "About us"
+        title: "About us",
+        address: '/#about-us'
     },
     {
-        title: "Contact"
+        title: "Contact",
+        address: '/#contact'
     },
 ]
 
@@ -37,7 +41,7 @@ export function Header() {
                     {
                         navigationLinks.map((navigationItem) => {
                             return (
-                                <Link to={"#"} className="leading-6">{navigationItem.title}</Link>
+                                <a href={`${navigationItem.address}`} className="leading-6">{navigationItem.title}</a>
                             )
                         })
                     }
@@ -61,7 +65,7 @@ export function Header() {
                                     {
                                         navigationLinks.map((navigationItem) => {
                                             return (
-                                                <Link to={"#"} className="-mx-3 block rounded-lg px-3 py-2 text-base  leading-7 hover:bg-gray-50">{navigationItem.title}</Link>
+                                                <a href={`${navigationItem.address}`} className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50">{navigationItem.title}</a>
                                             )
                                         })
                                     }
@@ -71,7 +75,6 @@ export function Header() {
                     </div>
                 </div> : null
             }
-
         </header>
     )
 }
